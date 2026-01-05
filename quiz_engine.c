@@ -329,6 +329,29 @@ void shuffleques(quiz *ques, int n)
     }
 }
 
+int vldques(quiz *q)
+{
+    // Check empty strings
+    if (strlen(q->question) < 2)
+        return 0;
+    if (strlen(q->answerA) < 2)
+        return 0;
+    if (strlen(q->answerB) < 2)
+        return 0;
+    if (strlen(q->answerC) < 2)
+        return 0;
+    if (strlen(q->answerD) < 2)
+        return 0;
+
+    // Check correct answer validity
+    char c = q->correctanswer;
+    if (c != 'A' && c != 'B' && c != 'C' && c != 'D' &&
+        c != 'a' && c != 'b' && c != 'c' && c != 'd')
+        return 0;
+
+    return 1; // VALID
+}
+
 // #== PRINTING QUESTIONS, SHOWING RESULT AT END, AND SAVING THEM ===#
 int diffsub(char *quesfile, char *username, char *subject, int difficulty)
 {

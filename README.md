@@ -35,7 +35,16 @@ A robust, modular Command Line Interface (CLI) Quiz Application written in **C**
 ### Compiling the Project
 Since this is a modular project, all source files must be compiled together. Open your terminal in the project folder and run:
 
-```bash
-gcc main.c auth.c quiz_engine.c utils.c -o QuizMaster.exe (press enter)
-```bash
-./QuizMaster.exe(press enter)
+bash
+gcc main.c auth.c quiz_engine.c utils.c -o QuizMaster.exe
+
+### Running the Application
+
+Bash
+./QuizMaster.exe
+
+## 🛡️ Security Note
+The users_data.txt file (local database) is excluded from this repository via .gitignore to protect local user credentials. A users_data_sample.txt can be provided to show the required data format.
+
+## 📜 License
+This project is open-source and available for educational purposes.

@@ -1,0 +1,4 @@
+*.exe
+*.o
+users_data.txt
+leaderboard.txt

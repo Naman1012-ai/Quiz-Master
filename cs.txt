@@ -1,0 +1,180 @@
+What does ALU stand for in a CPU?
+A) Arithmetic Logic Unit
+B) Advanced Logical Unit
+C) Automatic Logic Unit
+D) Array Logic Unit
+A
+Which CPU scheduling algorithm can cause starvation?
+A) FCFS
+B) Round Robin
+C) Shortest Job First
+D) Priority Scheduling
+D
+Which data structure is internally used for recursion?
+A) Queue
+B) Stack
+C) Heap
+D) Array
+B
+What is the worst-case time complexity of Quick Sort?
+A) O(n log n)
+B) O(log n)
+C) O(n)
+D) O(n²)
+D
+Which OSI layer is responsible for encryption and compression?
+A) Application
+B) Presentation
+C) Session
+D) Transport
+B
+What is virtual memory mainly used for?
+A) Faster CPU execution
+B) Logical extension of RAM
+C) Disk management
+D) Cache optimization
+B
+Which normal form removes transitive dependency?
+A) 1NF
+B) 2NF
+C) 3NF
+D) BCNF
+C
+Which algorithm finds the shortest path in a graph with non-negative weights?
+A) Bellman-Ford
+B) Floyd-Warshall
+C) Dijkstra
+D) Kruskal
+C
+What does context switching mean?
+A) Switching I/O devices
+B) Switching CPU between processes
+C) Switching memory blocks
+D) Switching threads only
+B
+Which protocol provides reliable data transfer?
+A) UDP
+B) IP
+C) TCP
+D) ICMP
+C
+What does CAP theorem relate to?
+A) Operating systems
+B) Distributed systems
+C) Computer architecture
+D) Compiler design
+B
+Which traversal of a BST gives sorted output?
+A) Preorder
+B) Postorder
+C) Inorder
+D) Level order
+C
+Which component of an OS handles synchronization?
+A) Scheduler
+B) Semaphore
+C) Loader
+D) Dispatcher
+B
+Which protocol is used for secure web communication?
+A) HTTP
+B) FTP
+C) HTTPS
+D) SMTP
+C
+Which cache mapping gives fastest access time?
+A) Direct mapping
+B) Fully associative mapping
+C) Set associative mapping
+D) Random mapping
+B
+In C, what is the size of an int on most 64-bit systems?
+A) 2 bytes
+B) 4 bytes
+C) 8 bytes
+D) 16 bytes
+B
+Which operator is used to access a structure member using a pointer?
+A) .
+B) *
+C) ->
+D) &
+C
+What will sizeof(char) return in C?
+A) 0
+B) 1
+C) 2
+D) Depends on compiler
+B
+Which keyword prevents modification of a variable in C?
+A) static
+B) volatile
+C) const
+D) extern
+C
+What is the output of: printf("%d", 5/2);
+A) 2.5
+B) 3
+C) 2
+D) Compilation error
+C
+Which storage class makes a variable visible across files?
+A) auto
+B) static
+C) register
+D) extern
+D
+What does a dangling pointer point to?
+A) NULL
+B) Valid memory
+C) Freed memory
+D) Stack memory
+C
+Which function is used to dynamically allocate memory in C?
+A) alloc()
+B) malloc()
+C) new()
+D) create()
+B
+What happens if malloc fails?
+A) Program crashes
+B) Returns 0
+C) Returns NULL
+D) Throws exception
+C
+Which header file is required for malloc()?
+A) stdio.h
+B) stdlib.h
+C) string.h
+D) memory.h
+B
+What is the default return type of a function if not specified in old C?
+A) void
+B) float
+C) int
+D) char
+C
+Which loop is guaranteed to execute at least once?
+A) for
+B) while
+C) do-while
+D) nested loop
+C
+What does the volatile keyword tell the compiler?
+A) Variable is constant
+B) Variable may change unexpectedly
+C) Variable is global
+D) Variable is thread-safe
+B
+Which C function compares two strings?
+A) strcmp()
+B) strcopy()
+C) strlen()
+D) strcat()
+A
+What is the output of: printf("%c", 65);
+A) 65
+B) A
+C) a
+D) Error
+B

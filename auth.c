@@ -154,32 +154,19 @@ int login(char *username)
     border(CYAN);
     printf("\n");
 
-    printf(CYAN "Enter username:- " RESET);
+    printf(CYAN "Enter username " RESET "(To exit, press '1') " CYAN ":- ");
     scanf("%29s", username);
     while (getchar() != '\n');
 
+    if(strcpy(username, "1") == 0) return 0;
     int choose;
     if (!user_exist(username))
     {
-        printf("\n");
         printf(BG_RED "Username doesn't exist!" RESET);
         printf("\n\n");
-        printf(YELLOW"--> SIGN UP FIRST!!\n");
-        printf(PINK"1."RESET"YES\n");
-        printf(PINK"2."RESET"NO"RESET);
-        printf("\n\n");
-        printf(CYAN"Enter your choice"RESET":- ");
-        choose = safe_input(1, 2);
-
-        if(choose == 1)
-        {
-            int x = signup(username);
-            return x;
-        }
-        else if(choose == 2)
-        {
-            return 0;
-        }
+        printf("Press any key to return...\n");
+        getch();
+        return 0; 
     }
     
     user u;
@@ -224,17 +211,20 @@ int signup(char *username)
 
     int attempts = 0;
 
-    printf(GREEN "Enter username:- " RESET);
+    printf(CYAN "Enter username " RESET "(To exit, press '1') " CYAN ":- ");
     scanf("%29s", username);
     while (getchar() != '\n');
     
+    if(strcpy(username, "1") == 0) return 0;
     while (strlen(username) < 3)
     {
         printf(BG_RED "Username must be atleast 3 characters long!\n" RESET);
         printf("\n");
-        printf(GREEN "Enter username:- " RESET);
+         printf(GREEN "Enter username " RESET "(To exit, press '1') "GREEN ":- ");
         scanf("%29s", username);
         while (getchar() != '\n');
+
+        if(strcpy(username, "1") == 0) return 0;
         attempts++;     
       
         if (attempts == 2 && strlen(username) < 3)
@@ -258,9 +248,10 @@ int signup(char *username)
         printf("\n");
         printf(YELLOW"1." RESET "SIGN UP WITH NEW ACCOUNT\n");
         printf(YELLOW"2." RESET "LOGIN INSTEAD");
+        printf(YELLOW"3." RESET "RETURN...");
         printf("\n\n");
         printf(BLUE "Enter your choice" RESET ":- ");
-        choice = safe_input(1, 2);
+        choice = safe_input(1, 3);
 
         if(choice == 1){
             clearscreen();
@@ -275,6 +266,9 @@ int signup(char *username)
         else if(choice == 2){
             login(username);
             return 1;
+        }
+        else if(choice == 3){
+            return 0;
         }
                 
         attempts++;

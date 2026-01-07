@@ -154,11 +154,11 @@ int login(char *username)
     border(CYAN);
     printf("\n");
 
-    printf(CYAN "Enter username " RESET "(To exit, press '1') " CYAN ":- ");
+    printf(CYAN "Enter username " RESET "(To exit, press '1') " CYAN ":- " RESET );
     scanf("%29s", username);
     while (getchar() != '\n');
 
-    if(strcpy(username, "1") == 0) return 0;
+    if(strcmp(username, "1") == 0) return 0;
     int choose;
     if (!user_exist(username))
     {
@@ -211,20 +211,20 @@ int signup(char *username)
 
     int attempts = 0;
 
-    printf(CYAN "Enter username " RESET "(To exit, press '1') " CYAN ":- ");
+    printf(CYAN "Enter username " RESET "(To exit, press '1') " CYAN ":- " RESET );
     scanf("%29s", username);
     while (getchar() != '\n');
     
-    if(strcpy(username, "1") == 0) return 0;
+    if(strcmp(username, "1") == 0) return 0;
     while (strlen(username) < 3)
     {
         printf(BG_RED "Username must be atleast 3 characters long!\n" RESET);
         printf("\n");
-         printf(GREEN "Enter username " RESET "(To exit, press '1') "GREEN ":- ");
+         printf(GREEN "Enter username " RESET "(To exit, press '1') "GREEN ":- " RESET);
         scanf("%29s", username);
         while (getchar() != '\n');
 
-        if(strcpy(username, "1") == 0) return 0;
+        if(strcmp(username, "1") == 0) return 0;
         attempts++;     
       
         if (attempts == 2 && strlen(username) < 3)
